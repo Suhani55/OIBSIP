@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f1f;
+    padding: 15px 30px;
+}
+
+nav h1 {
+    font-size: 1.5em;
+    color: #00bcd4;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #00bcd4;
+    margin-bottom: 15px;
+}
+
+header h1 span {
+    color: #00bcd4;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    border-bottom: 2px solid #00bcd4;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list span {
+    background: #1f1f1f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.skills-list span:hover {
+    background: #00bcd4;
+}
+
+/* Projects */
+.project {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+/* Contact */
+#contact p {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #1f1f1f;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Existing dark theme styles remain the same */
+
+/* Smooth fade-in effect */
+.fade-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Smooth scroll behavior for browsers that support it */
+html {
+    scroll-behavior: smooth;
+}
